@@ -11,7 +11,7 @@ Install required packages:
 ```bash
 pip install -r requirements.txt
 
-**Note**: If you need to train from scratch, please install Mamba-ssm:
+## Note If you need to train from scratch, please install Mamba-ssm:
 ```bash
 pip install causal-conv1d>=1.1.0
 pip install mamba-ssm
