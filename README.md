@@ -2,17 +2,20 @@
 
 ## Installation and Requirements
 
-**Note**: If you need to train from scratch, please install Mamba-ssm:
-```bash
-pip install causal-conv1d>=1.1.0
-pip install mamba-ssm
-```
-
 We have trained and tested the codes on:
 - Ubuntu 20.04
 - CUDA 11.1  
 - Python 3.8+
 
+Install required packages:
+```bash
+pip install -r requirements.txt
+
+**Note**: If you need to train from scratch, please install Mamba-ssm:
+```bash
+pip install causal-conv1d>=1.1.0
+pip install mamba-ssm
+```
 ## Train the Model
 
 The commands used to train the released models are provided in script `train.sh`. Here are some training tips:
