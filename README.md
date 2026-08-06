@@ -21,7 +21,7 @@ pip install mamba-ssm
 
 The commands used to train the released models are provided in script `train.sh`. Here are some training tips:
 
-- You should download CelebA to train FADPNet. Please change the `--dataroot` to the path where your training images are stored.
+- You should download [CelebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) to train FADPNet. Please change the `--dataroot` to the path where your training images are stored.
 - To train FADPNet, we simply crop out faces from CelebA without pre-alignment, because for ultra-low resolution face SR, it is difficult to pre-align the LR images.  
 - Please change the `--name` option for different experiments. Tensorboard records with the same name will be moved to `check_points/log_archive`, and the weight directory will only store weight history of the latest experiment with the same name.
 - If there's not enough memory, you can turn down the `--batch_size`.
